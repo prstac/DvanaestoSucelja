@@ -17,7 +17,11 @@ public class Main {
         knjige.add(new Knjiga("F"));
         knjige.add(new Knjiga("G"));
         knjige.add(new Knjiga("L"));
+        knjige.add(new Knjiga("Lo"));
         knjige.add(new Knjiga("LJ"));
+        knjige.add(new Knjiga("LJa"));
+        knjige.add(new Knjiga("LJb"));
+        knjige.add(new Knjiga("La"));
         knjige.add(new Knjiga("J"));
 
         Collections.shuffle(knjige);
