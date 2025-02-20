@@ -16,14 +16,20 @@ public class Main {
         knjige.add(new Knjiga("G"));
 
         Collections.shuffle(knjige);
-
-        Collections.sort(knjige);
+        izlistaj(knjige, "Promijesane knjige");
 
         knjige.get(1).posudiKnjigu();
         knjige.get(2).posudiKnjigu();
         knjige.get(3).posudiKnjigu();
         knjige.get(3).vratiKnjigu();;
+        Collections.sort(knjige);
 
+        izlistaj(knjige, "Sortirane knjige");
+    }
+
+    private static void izlistaj(List<Knjiga> knjige, String naslov) {
+        System.out.println(naslov);
         knjige.forEach(k-> System.out.println(k));
+        System.out.println();
     }
 }
