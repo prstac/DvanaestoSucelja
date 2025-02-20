@@ -11,11 +11,13 @@ public class Knjiga implements PosudbaKnjige, Comparable<Knjiga>{
     @Override
     public void posudiKnjigu() {
         jePosudjena = true;
+        System.out.println("Posudio " + naslov);
     }
 
     @Override
     public void vratiKnjigu() {
         jePosudjena = false;
+        System.out.println("Vratio " + naslov);
     }
 
     @Override

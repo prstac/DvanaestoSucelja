@@ -22,6 +22,8 @@ public class Main {
         knjige.get(2).posudiKnjigu();
         knjige.get(3).posudiKnjigu();
         knjige.get(3).vratiKnjigu();;
+        System.out.println();
+
         Collections.sort(knjige);
 
         izlistaj(knjige, "Sortirane knjige");
