@@ -8,12 +8,17 @@ public class Main {
     public static void main(String[] args) {
         List<Knjiga> knjige = new ArrayList<>();
         knjige.add(new Knjiga("A"));
+        knjige.add(new Knjiga("Ž"));
         knjige.add(new Knjiga("B"));
         knjige.add(new Knjiga("C"));
+        knjige.add(new Knjiga("Č"));
         knjige.add(new Knjiga("D"));
         knjige.add(new Knjiga("E"));
         knjige.add(new Knjiga("F"));
         knjige.add(new Knjiga("G"));
+        knjige.add(new Knjiga("L"));
+        knjige.add(new Knjiga("LJ"));
+        knjige.add(new Knjiga("J"));
 
         Collections.shuffle(knjige);
         izlistaj(knjige, "Promijesane knjige");

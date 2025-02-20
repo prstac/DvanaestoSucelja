@@ -1,5 +1,8 @@
 package ZadatakKnjiznica;
 
+import java.text.Collator;
+import java.util.Locale;
+
 public class Knjiga implements PosudbaKnjige, Comparable<Knjiga>{
     String naslov;
     boolean jePosudjena = false;
@@ -22,7 +25,9 @@ public class Knjiga implements PosudbaKnjige, Comparable<Knjiga>{
 
     @Override
     public int compareTo(Knjiga o) {
-        return naslov.compareTo(o.naslov);
+        Collator collator = Collator.getInstance(new Locale("hr"));
+        return collator.compare(naslov, o.naslov);
+        //return naslov.compareTo(o.naslov);
     }
 
     @Override
