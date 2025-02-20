@@ -6,6 +6,7 @@ import java.util.Locale;
 public class Knjiga implements PosudbaKnjige, Comparable<Knjiga>{
     String naslov;
     boolean jePosudjena = false;
+    Collator collator = Collator.getInstance(new Locale.Builder().setLanguage("hr").build());
 
     public Knjiga(String naslov) {
         this.naslov = naslov;
@@ -25,7 +26,6 @@ public class Knjiga implements PosudbaKnjige, Comparable<Knjiga>{
 
     @Override
     public int compareTo(Knjiga o) {
-        Collator collator = Collator.getInstance(new Locale.Builder().setLanguage("hr").build());
         return collator.compare(naslov, o.naslov);
         //return naslov.compareTo(o.naslov);
     }
