@@ -25,7 +25,7 @@ public class Knjiga implements PosudbaKnjige, Comparable<Knjiga>{
 
     @Override
     public int compareTo(Knjiga o) {
-        Collator collator = Collator.getInstance(new Locale("hr"));
+        Collator collator = Collator.getInstance(new Locale.Builder().setLanguage("hr").build());
         return collator.compare(naslov, o.naslov);
         //return naslov.compareTo(o.naslov);
     }
