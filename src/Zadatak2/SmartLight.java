@@ -5,6 +5,7 @@ public class SmartLight extends SmartDevice {
     private float brighntess = 1.0f;
     @Override
     public void remoteControl(String command) {
+        performAction(command);
     }
 
     @Override
