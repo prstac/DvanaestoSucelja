@@ -25,6 +25,6 @@ public class SmartThermostat extends SmartDevice {
 
     @Override
     void displayStatus() {
-        System.out.println("Temperature is : " + temperature);
+        System.out.println("Temperature is : " + temperature +" version: " + getVersion());
     }
 }

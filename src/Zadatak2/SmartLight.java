@@ -32,6 +32,6 @@ public class SmartLight extends SmartDevice {
 
     @Override
     void displayStatus() {
-        System.out.println("Light is " + (isTurnedOn?"On" : "Off") + " and brighntess is " + brighntess);
+        System.out.println("Light is " + (isTurnedOn?"On" : "Off") + " and brighntess is " + brighntess +" version: " + getVersion());
     }
 }

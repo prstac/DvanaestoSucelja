@@ -34,6 +34,6 @@ public class SmartSpeaker extends SmartDevice {
 
     @Override
     void displayStatus() {
-        System.out.println("Speaker is " + (isTurnedOn? "On" : "Off") +" and volume is " +volume);
+        System.out.println("Speaker is " + (isTurnedOn? "On" : "Off") +" and volume is " +volume+" version: " + getVersion());
     }
 }
