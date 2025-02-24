@@ -12,13 +12,17 @@ Ažurirajte firmver svakog uređaja i prikažite ažurirani status.*/
         termostat.displayStatus();
         termostat.performAction("25");
         termostat.performAction("Show");
+        termostat.remoteControl("26");
+        termostat.displayStatus();
         speaker.displayStatus();
         speaker.performAction("On");
         speaker.performAction("+");
+        speaker.remoteControl("+");
         speaker.displayStatus();
         light.displayStatus();
         light.performAction("On");
         light.performAction("-");
+        light.remoteControl("-");
         light.displayStatus();
     }
 }
