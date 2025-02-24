@@ -14,14 +14,22 @@ public class Knjiga implements PosudbaKnjige, Comparable<Knjiga>{
 
     @Override
     public void posudiKnjigu() {
-        jePosudjena = true;
-        System.out.println("Posudio " + naslov);
+        if (jePosudjena) {
+            System.out.println(naslov + " ne možete posuditi jer je već posuđen");
+        } else {
+            jePosudjena = true;
+            System.out.println("Posudio " + naslov);
+        }
     }
 
     @Override
     public void vratiKnjigu() {
-        jePosudjena = false;
-        System.out.println("Vratio " + naslov);
+        if (!jePosudjena) {
+            System.out.println(naslov + " se ne može vratiti jer nije ni posuđena");
+        } else {
+            jePosudjena = false;
+            System.out.println("Vratio " + naslov);
+        }
     }
 
     @Override

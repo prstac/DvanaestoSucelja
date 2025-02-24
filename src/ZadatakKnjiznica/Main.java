@@ -30,7 +30,11 @@ public class Main {
         knjige.get(1).posudiKnjigu();
         knjige.get(2).posudiKnjigu();
         knjige.get(3).posudiKnjigu();
-        knjige.get(3).vratiKnjigu();;
+        knjige.get(3).vratiKnjigu();
+        knjige.get(3).vratiKnjigu();
+        knjige.get(3).posudiKnjigu();
+        knjige.get(3).posudiKnjigu();
+        knjige.get(3).vratiKnjigu();
         System.out.println();
 
         Collections.sort(knjige);
