@@ -4,7 +4,7 @@ public abstract class SmartDevice implements RemoteControllable{
     abstract void performAction(String action);
     abstract void displayStatus();
 
-    private String version;
+    private String version = "alfa";
 
     public String getVersion() {
         return version;
